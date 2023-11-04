@@ -1,10 +1,20 @@
-
-
 function myShow(name) {
-    document.getElementById(name).style.display = "block"
+    const hide = document.getElementsByClassName('hide');
+    for (let i = 0; i < hide.length; i+=2) {
+        if (hide[i].getAttribute('id') == name) {
+            hide[i].style.display = "block";
+            hide[i+1].style.display = "block";
+        }
+    }
 }
 
 function myHide(name) {
-    document.getElementById(name).style.display = "none"
+    const hide = document.getElementsByClassName('hide');
+    for (let i = 0; i < hide.length; i+=2) {
+        if (hide[i].getAttribute('id') == name) {
+            hide[i].style.display = "none";
+            hide[i+1].style.display = "none";
+        }
+    }
 }
 
