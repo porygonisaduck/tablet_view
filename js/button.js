@@ -18,3 +18,14 @@ function myHide(name) {
     }
 }
 
+onload = function(){
+    let parent = document.getElementById("main");
+    let children = parent.children;
+    let length = parent.children.length;
+
+    for (let i = 0; i < length; ++i) {
+        parent.append(children[Math.floor(Math.random() * length)])
+    }
+
+    this.document.querySelector("body").style.display = "block";
+}

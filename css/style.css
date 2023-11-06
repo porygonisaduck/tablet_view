@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 body {
+    display: none;
     color: #000000;
     font-family: 'Ubuntu';
 }
@@ -229,9 +230,9 @@ span {
 
     /* and (max-width: 991px) */
 
-    .id:focus {
+    #skip:focus {
         position: absolute;
-        top: -20px;
+        top: 10px;
     }
 
     /* Nav */
